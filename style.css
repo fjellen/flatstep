@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.split {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.split section {
+    width: 50%;
+}
+
+.split section:nth-of-type(1) {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split > section:nth-of-type(2) {
+    background-image: url("photo-1513161455079-7dc1de15ef3e.jpg");
+    background-size: cover;
+}
+
+form input[type="email"], form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-color: #bdc3c7;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+form input[type="checkbox"]:checked {
+    background-color: #2c3e50;
+}
+
+form {
+    width: 30%;
+}
+
+form a {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+
+form > button {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 32px;
+    display: block;
+    margin-top: 16px;
+    background-color: #2c3e50;
+    border-radius: 4px;
+    color: white;
+}
+
+form nav {
+    margin-bottom: 16px;
+}
+
+form nav button {
+    background: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+    margin-right: 16px;
+}
+
+form nav button.selected {
+    border-bottom-style: solid;
+    border-bottom-color:#2c3e50;
+    border-bottom-width: 2px;
+}
+
+.split-x {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.split-x section:nth-of-type(1) {
+    flex: none;
+    width: 7%;
+    justify-content: left;
+}
+
+.split-x section:nth-of-type(2) {
+    flex: auto;
+}
+
+.split-x section:nth-of-type(2) span {
+    font-weight: 400;
+    padding-right: 8px;
+}
